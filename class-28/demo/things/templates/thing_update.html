@@ -1,0 +1,10 @@
+{% extends "_base.html" %}
+{% block title %}Things List{% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type ="submit" value="Issa"/>
+    </form>
+{% endblock %}

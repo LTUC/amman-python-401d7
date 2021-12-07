@@ -1,0 +1,10 @@
+{% extends "_base.html" %}
+{% block title %}{{thing.name}} detail{% endblock %}
+
+{% block content %}
+    <h1><a href =''>{{thing.name}}</a></h1>
+    <h2>{{thing.reater}}</h2>
+    <h3>{{thing.rate}}</h3>
+    <button><a href = "/delete{{thing.get_absolute_url}}">Delete</a></button>
+    <button><a href = "/update{{thing.get_absolute_url}}">Update</a></button>
+{% endblock %}

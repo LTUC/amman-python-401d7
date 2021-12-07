@@ -1,0 +1,10 @@
+{% extends "_base.html" %}
+{% block title %}Things List{% endblock %}
+
+{% block content %}
+ {% for thing in object_list %}
+    <h1><a href ='{{thing.get_absolute_url}}'>{{thing.name}}</a></h1>
+    <h2>{{thing.rater}}</h2>
+    <span>{{thing.rate}}</span>
+ {% endfor %}
+{% endblock %}
