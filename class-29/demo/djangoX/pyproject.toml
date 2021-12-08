@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "djangox"
+version = "0.1.0"
+description = ""
+authors = ["yahyaalbashar <v.salvatore7.gs@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.0"
+django-allauth = "^0.46.0"
+django-crispy-forms = "^1.13.0"
+django-debug-toolbar = "^3.2.2"
+whitenoise = "^5.3.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
