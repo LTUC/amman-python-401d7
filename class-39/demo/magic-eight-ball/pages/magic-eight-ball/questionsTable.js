@@ -13,9 +13,9 @@ const QuestionsTable= (props)=> {
             props.answersList.map(item =>{
               return (
                 <tr>
-                  <td className='border border-blue-600'>{item.answer.id}</td>
+                  <td className='border border-blue-600'>{item.id}</td>
                   <td className='border border-blue-600'>{item.text}</td>
-                  <td className='border border-blue-600'>{item.answer.text}</td>
+                  <td className='border border-blue-600'>{item.answer_text}</td>
                 </tr>
               )
             })
